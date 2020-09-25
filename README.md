@@ -60,6 +60,10 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 yum -y install httpd
 systemctl start httpd
 
+sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+
 wget https://archive.cloudera.com/cm6/6.3.1/cloudera-manager-installer.bin
+
 chmod u+x cloudera-manager-installer.bin
+
 sudo ./cloudera-manager-installer.bin
